@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>primerPreEntrega</title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <style>
+        body{
+            background: rgb(54, 54, 54);
+        }
+        #boton1{
+            margin-top: 350px;
+            margin-left: 600px;
+        }
+        #boton2{
+            margin-top: 350px;
+            margin-left: 50px;
+        }
+    </style>
+</head>
+<body>
+    <!-- Button trigger modal -->
+    <button id="boton1" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdrop">
+    Ingresar Precios</button>
+    <button id="boton2" type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#staticBackdropCosto">
+    Calcular Costo</button>
+        
+  <!-- Modal Precios-->
+    <div class="modal fade" id="staticBackdrop" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Ingresar Precios</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Harina-Medio Kilo</span>
+            <input type="number" id="harina" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Huevos-Maple</span>
+            <input type="number" id="huevos" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Leche-1 Litro</span>
+            <input type="number" id="leche" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Azucar-Medio Kilo</span>
+            <input type="number" id="azucar" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Manteca-Medio Kilo</span>
+            <input type="number" id="manteca" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Chocolate-1 Kilo</span>
+            <input type="number" id="chocolate" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Membrino-Medio Kilo</span>
+            <input type="number" id="membrillo" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Limon-Unidad</span>
+            <input type="number" id="limon" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Zanahoria-Unidad</span>
+            <input type="number" id="zanahoria" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-success" data-bs-dismiss="modal">Cerrar y Guardar</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    
+  <!-- Modal Costo-->
+  <div class="modal fade" id="staticBackdropCosto" data-bs-backdrop="static" data-bs-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h1 class="modal-title fs-5" id="staticBackdropLabel">Ingresar Cantidades</h1>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+        <div class="input-group mb-3">
+            <span class="input-group-text">Harina-Medio Kilo</span>
+            <input type="number" id="cantHarina" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Huevos-Maple</span>
+            <input type="number" id="cantHuevos" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Leche-1 Litro</span>
+            <input type="number" id="cantLeche" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Azucar-Medio Kilo</span>
+            <input type="number" id="cantAzucar" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Manteca-Medio Kilo</span>
+            <input type="number" id="cantManteca" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Chocolate-1 Kilo</span>
+            <input type="number" id="cantChocolate" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Membrino-Medio Kilo</span>
+            <input type="number" id="cantMembrillo" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Limon-Unidad</span>
+            <input type="number" id="cantLimon" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">Zanahoria-Unidad</span>
+            <input type="number" id="cantZanahoria" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        </div>
+        <div class="input-group mb-3">
+            <span class="input-group-text">RESULTADO/COSTO: </span>
+            <output id="r" class="form-control" aria-label="">
+            <span class="input-group-text"></span>
+        </div>
+        <div class="modal-footer">
+          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+          <button type="button" onclick="calcularCosto()" class="btn btn-primary" >Calcular</button>
+        </div>
+      </div>
+    </div>
+    </div>
+    <!-- JavaScript Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+</html>
